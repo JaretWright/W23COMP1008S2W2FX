@@ -41,13 +41,29 @@ public class Card {
      */
     public void setFaceName(String faceName) {
         faceName = faceName.toLowerCase();
-        List<String> faceNameOptions = Arrays.asList("2","3","4",
-                        "5","6","7","8","9","10","jack","queen","king","ace");
+        List<String> faceNameOptions = getValidFaceNames();
         if (faceNameOptions.contains(faceName))
             this.faceName = faceName;
         else
             throw new IllegalArgumentException(faceName + " must be one of " +
                     faceNameOptions);
+    }
+
+    /**
+     * This method returns a list of valid faceNames
+     */
+    public List<String> getValidFaceNames()
+    {
+        return Arrays.asList("2","3","4","5","6","7","8","9","10",
+                "jack","queen","king","ace");
+    }
+
+    /**
+     * This method returns the value of the card
+     */
+    public int getValue()
+    {
+        return getValidFaceNames().indexOf(faceName)+2;
     }
 
     /**

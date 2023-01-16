@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         //this will create an instance of a Card object
         //it holds the Ace of Spades
-        Card aceOfSpades = new Card("Ace","Spades");
-        System.out.println(aceOfSpades.toString());
+        Card aceOfSpades = new Card("Queen","Spades");
+        System.out.println("Value of "+aceOfSpades + ": "+aceOfSpades.getValue());
     }
 }
