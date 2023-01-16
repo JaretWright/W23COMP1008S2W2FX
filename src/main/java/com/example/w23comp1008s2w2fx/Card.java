@@ -42,7 +42,7 @@ public class Card {
     public void setFaceName(String faceName) {
         faceName = faceName.toLowerCase();
         List<String> faceNameOptions = Arrays.asList("2","3","4",
-                        "5","6","7","8","9","10","Jack","Queen","King","Ace");
+                        "5","6","7","8","9","10","jack","queen","king","ace");
         if (faceNameOptions.contains(faceName))
             this.faceName = faceName;
         else
