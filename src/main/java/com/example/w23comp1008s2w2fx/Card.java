@@ -18,7 +18,7 @@ public class Card {
      * @param suit "hearts","spades","clubs","diamonds"
      */
     public Card(String faceName, String suit) {
-        this.faceName = faceName;
+        setFaceName(faceName);
         setSuit(suit);
     }
 
@@ -34,12 +34,20 @@ public class Card {
         return faceName;
     }
 
+    /**
+     * This validates that the facename is one of "2","3","4".
+     * ...."9","10","Jack","Queen","King","Ace"
+     * @param faceName
+     */
     public void setFaceName(String faceName) {
-        this.faceName = faceName;
-    }
-
-    public String getSuit() {
-        return suit;
+        faceName = faceName.toLowerCase();
+        List<String> faceNameOptions = Arrays.asList("2","3","4",
+                        "5","6","7","8","9","10","Jack","Queen","King","Ace");
+        if (faceNameOptions.contains(faceName))
+            this.faceName = faceName;
+        else
+            throw new IllegalArgumentException(faceName + " must be one of " +
+                    faceNameOptions);
     }
 
     /**
@@ -48,9 +56,11 @@ public class Card {
      * @param suit "hearts","spades","clubs","diamonds"
      */
     public void setSuit(String suit) {
+        suit = suit.toLowerCase();
+
         //Create a list of valid card suit names
         List<String> validSuits =
-                            Arrays.asList("hearts","spades","clubs","diamonds");
+                Arrays.asList("hearts","spades","clubs","diamonds");
 
         //if the argument (suit) passed into the method is valid, set the instance
         //variable, otherwise throw an exception to stop the program
@@ -60,4 +70,10 @@ public class Card {
             throw new IllegalArgumentException(suit +
                     " was received, valid options are " +validSuits);
     }
+
+    public String getSuit() {
+        return suit;
+    }
+
+
 }
