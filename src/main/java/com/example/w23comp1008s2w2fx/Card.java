@@ -59,6 +59,18 @@ public class Card {
     }
 
     /**
+     * This method returns a String with the colour
+     * of the suit
+     */
+    public String getColour()
+    {
+        if ( suit.equals("hearts") || suit.equals("diamonds"))
+            return "red";
+        else
+            return "black";
+    }
+
+    /**
      * This method returns the value of the card
      */
     public int getValue()
