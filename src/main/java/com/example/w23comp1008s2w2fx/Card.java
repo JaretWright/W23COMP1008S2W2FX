@@ -75,7 +75,9 @@ public class Card {
      */
     public int getValue()
     {
-        return getValidFaceNames().indexOf(faceName)+2;
+        List<String> faceNames = getValidFaceNames();
+        int indexPosition = faceNames.indexOf(faceName);
+        return indexPosition+2;
     }
 
     public static List<String> getValidSuitNames()
