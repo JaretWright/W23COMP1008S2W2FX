@@ -52,7 +52,7 @@ public class Card {
     /**
      * This method returns a list of valid faceNames
      */
-    public List<String> getValidFaceNames()
+    public static List<String> getValidFaceNames()
     {
         return Arrays.asList("2","3","4","5","6","7","8","9","10",
                 "jack","queen","king","ace");
@@ -78,6 +78,11 @@ public class Card {
         return getValidFaceNames().indexOf(faceName)+2;
     }
 
+    public static List<String> getValidSuitNames()
+    {
+        return Arrays.asList("hearts","spades","clubs","diamonds");
+    }
+
     /**
      * This will ensure we have a valid suit before setting the instance
      * vairable
@@ -87,8 +92,7 @@ public class Card {
         suit = suit.toLowerCase();
 
         //Create a list of valid card suit names
-        List<String> validSuits =
-                Arrays.asList("hearts","spades","clubs","diamonds");
+        List<String> validSuits = getValidSuitNames();
 
         //if the argument (suit) passed into the method is valid, set the instance
         //variable, otherwise throw an exception to stop the program
