@@ -24,4 +24,14 @@ public class DeckOfCards {
             }
         }
     }
+
+    /**
+     * This method will deal the top card from the deck
+     */
+    public Card dealTopCard()
+    {
+        if (deck.size()>0)
+            return deck.remove(0);
+        return null;
+    }
 }
