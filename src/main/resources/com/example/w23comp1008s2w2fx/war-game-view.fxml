@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.image.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="800.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.w23comp1008s2w2fx.WarGameViewController">
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.w23comp1008s2w2fx.WarGameViewController">
    <children>
       <VBox alignment="CENTER" layoutX="75.0" layoutY="75.0" prefHeight="800.0" prefWidth="800.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <HBox>
+            <HBox spacing="10.0">
                <children>
-                  <ImageView fitHeight="529.0" fitWidth="369.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fx:id="imageView" fitHeight="529.0" fitWidth="369.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/king_of_clubs2.png" />
                      </image>
                   </ImageView>
-                  <GridPane prefHeight="529.0" prefWidth="466.0">
+                  <GridPane maxHeight="200.0" prefHeight="200.0" prefWidth="466.0">
                     <columnConstraints>
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="216.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="197.0" minWidth="10.0" prefWidth="189.0" />
                     </columnConstraints>
                     <rowConstraints>
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -29,20 +36,17 @@
                     </rowConstraints>
                      <children>
                         <Label text="Face Name:" />
-                        <Label text="Label" GridPane.columnIndex="1" />
+                        <Label fx:id="faceNameLabel" text="Label" GridPane.columnIndex="1" />
                         <Label text="Suit:" GridPane.rowIndex="1" />
-                        <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                           <font>
-                              <Font size="24.0" />
-                           </font>
+                        <Label fx:id="suitLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1">
                         </Label>
                         <Label text="Value:" GridPane.rowIndex="2" />
-                        <Label text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="valueLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                      </children>
                   </GridPane>
                </children>
             </HBox>
-            <Button mnemonicParsing="false" text="Next Card">
+            <Button mnemonicParsing="false" onAction="#nextCard" text="Next Card">
                <font>
                   <Font size="36.0" />
                </font>
