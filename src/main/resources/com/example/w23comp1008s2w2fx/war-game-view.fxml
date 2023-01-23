@@ -24,10 +24,10 @@
                         <Image url="@images/king_of_clubs2.png" />
                      </image>
                   </ImageView>
-                  <GridPane maxHeight="200.0" prefHeight="200.0" prefWidth="466.0">
+                  <GridPane maxHeight="200.0" prefHeight="200.0" prefWidth="562.0">
                     <columnConstraints>
-                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="216.0" />
-                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="197.0" minWidth="10.0" prefWidth="189.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="306.0" minWidth="10.0" prefWidth="254.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="308.0" minWidth="10.0" prefWidth="308.0" />
                     </columnConstraints>
                     <rowConstraints>
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />

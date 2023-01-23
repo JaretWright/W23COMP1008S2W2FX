@@ -34,4 +34,12 @@ public class DeckOfCards {
             return deck.remove(0);
         return null;
     }
+
+    /**
+     * This will shuffle the Deck
+     */
+    public void shuffle()
+    {
+        Collections.shuffle(deck);
+    }
 }

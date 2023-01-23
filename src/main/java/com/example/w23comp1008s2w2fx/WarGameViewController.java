@@ -7,6 +7,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class WarGameViewController implements Initializable {
@@ -37,6 +38,8 @@ public class WarGameViewController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         deck = new DeckOfCards();
+        deck.shuffle();
+
         nextCard();
     }
 }
