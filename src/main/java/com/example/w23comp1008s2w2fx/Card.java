@@ -1,5 +1,7 @@
 package com.example.w23comp1008s2w2fx;
 
+import javafx.scene.image.Image;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -109,5 +111,16 @@ public class Card {
         return suit;
     }
 
+    /**
+     * This method returns an Image object representing the Card
+     * visually
+     * It will load the card image based on the filename structure
+     * faceName_of_suit.png
+     */
+    public Image getImage()
+    {
+        String fileName = "images/" + faceName + "_of_" + suit + ".png";
+        return new Image(Card.class.getResourceAsStream(fileName));
+    }
 
 }
