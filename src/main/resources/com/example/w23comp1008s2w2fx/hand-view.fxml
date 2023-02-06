@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.w23comp1008s2w2fx.HandViewController">
+   <children>
+      <ImageView fitHeight="340.0" fitWidth="264.0" layoutX="148.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true" rotate="-9.5">
+         <image>
+            <Image url="@images/2_of_clubs.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
