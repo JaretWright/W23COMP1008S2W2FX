@@ -14,65 +14,66 @@
    <children>
       <VBox alignment="CENTER" layoutX="98.0" layoutY="81.0" prefHeight="800.0" prefWidth="1000.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <FlowPane fx:id="flowPane" hgap="20.0" prefHeight="200.0" prefWidth="200.0" vgap="20.0">
+            <FlowPane fx:id="flowPane" alignment="CENTER" hgap="20.0" prefHeight="200.0" prefWidth="200.0" vgap="20.0">
                <children>
-                  <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="200.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/3_of_hearts.png" />
-                     </image></ImageView>
-                  <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@images/3_of_hearts.png" />
+                        <Image url="@images/back_of_card.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="148.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="200.0" fitWidth="125.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/3_of_hearts.png" />
+                        <Image url="@images/back_of_card.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="286.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="200.0" fitWidth="125.0" layoutX="138.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/3_of_hearts.png" />
+                        <Image url="@images/back_of_card.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="424.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="200.0" fitWidth="125.0" layoutX="266.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/3_of_hearts.png" />
+                        <Image url="@images/back_of_card.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="562.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="200.0" fitWidth="125.0" layoutX="394.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/3_of_hearts.png" />
+                        <Image url="@images/back_of_card.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="700.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="200.0" fitWidth="125.0" layoutX="522.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/3_of_hearts.png" />
+                        <Image url="@images/back_of_card.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="10.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="200.0" fitWidth="125.0" layoutX="650.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/3_of_hearts.png" />
+                        <Image url="@images/back_of_card.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="148.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="200.0" fitWidth="125.0" layoutX="778.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/3_of_hearts.png" />
+                        <Image url="@images/back_of_card.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="286.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="200.0" fitWidth="125.0" layoutX="10.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/3_of_hearts.png" />
+                        <Image url="@images/back_of_card.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="484.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="200.0" fitWidth="125.0" layoutX="138.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/3_of_hearts.png" />
+                        <Image url="@images/back_of_card.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="642.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="200.0" fitWidth="125.0" layoutX="266.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/3_of_hearts.png" />
+                        <Image url="@images/back_of_card.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" fitWidth="125.0" layoutX="522.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/back_of_card.png" />
                      </image>
                   </ImageView>
                </children>
