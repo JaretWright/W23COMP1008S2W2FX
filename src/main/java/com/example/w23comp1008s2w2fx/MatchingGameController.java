@@ -65,8 +65,8 @@ public class MatchingGameController implements Initializable {
         deck.shuffle();
         cardsDealt = new ArrayList<>();
 
-        //deal 4 Cards and duplicate each one
-        for (int i=1; i<=4 ; i++)
+        //deal 1/2 the number of imageView objects and duplicate them
+        for (int i=1; i<=flowPane.getChildren().size()/2 ; i++)
         {
             Card card = deck.dealTopCard();
             cardsDealt.add(card);
@@ -74,8 +74,14 @@ public class MatchingGameController implements Initializable {
         }
 
         Collections.shuffle(cardsDealt);
+        displayCardsDealt();
+    }
 
-
-
+    private void displayCardsDealt()
+    {
+        for (int i=0; i<cardsDealt.size(); i++)
+        {
+            System.out.printf("Index %2d: %s %n",i, cardsDealt.get(i));
+        }
     }
 }
