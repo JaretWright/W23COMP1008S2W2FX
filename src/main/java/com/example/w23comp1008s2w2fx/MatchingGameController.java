@@ -7,6 +7,7 @@ import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
 
 import java.net.URL;
@@ -17,28 +18,7 @@ import java.util.ResourceBundle;
 public class MatchingGameController implements Initializable {
 
     @FXML
-    private ImageView cardImage0;
-
-    @FXML
-    private ImageView cardImage1;
-
-    @FXML
-    private ImageView cardImage2;
-
-    @FXML
-    private ImageView cardImage3;
-
-    @FXML
-    private ImageView cardImage4;
-
-    @FXML
-    private ImageView cardImage5;
-
-    @FXML
-    private ImageView cardImage6;
-
-    @FXML
-    private ImageView cardImage7;
+    private FlowPane flowPane;
 
     @FXML
     private Label correctLabel;
@@ -48,12 +28,6 @@ public class MatchingGameController implements Initializable {
 
     @FXML
     private Label percentCorrectLabel;
-
-    @FXML
-    private HBox row1HBox;
-
-    @FXML
-    private HBox row2HBox;
 
     private ArrayList<Card> cardsDealt;
 

@@ -6,62 +6,77 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-
 
 <AnchorPane prefHeight="800.0" prefWidth="1000.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.w23comp1008s2w2fx.MatchingGameController">
    <children>
       <VBox alignment="CENTER" layoutX="98.0" layoutY="81.0" prefHeight="800.0" prefWidth="1000.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <HBox fx:id="row1HBox" alignment="CENTER" spacing="20.0">
+            <FlowPane fx:id="flowPane" hgap="20.0" prefHeight="200.0" prefWidth="200.0" vgap="20.0">
                <children>
-                  <ImageView fx:id="cardImage0" fitHeight="324.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/2_of_hearts.png" />
+                        <Image url="@images/3_of_hearts.png" />
+                     </image></ImageView>
+                  <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/3_of_hearts.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="cardImage1" fitHeight="324.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="148.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/2_of_hearts.png" />
+                        <Image url="@images/3_of_hearts.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="cardImage2" fitHeight="324.0" fitWidth="200.0" layoutX="210.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="286.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/2_of_hearts.png" />
+                        <Image url="@images/3_of_hearts.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="cardImage3" fitHeight="324.0" fitWidth="200.0" layoutX="410.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="424.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@images/2_of_hearts.png" />
+                        <Image url="@images/3_of_hearts.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="562.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/3_of_hearts.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="700.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/3_of_hearts.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="10.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/3_of_hearts.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="148.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/3_of_hearts.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="286.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/3_of_hearts.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="484.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/3_of_hearts.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" fitWidth="150.0" layoutX="642.0" layoutY="230.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/3_of_hearts.png" />
                      </image>
                   </ImageView>
                </children>
-            </HBox>
-            <HBox fx:id="row2HBox" alignment="CENTER" spacing="20.0">
-               <children>
-                  <ImageView fx:id="cardImage4" fitHeight="324.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@images/2_of_hearts.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="cardImage5" fitHeight="324.0" fitWidth="200.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@images/2_of_hearts.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="cardImage6" fitHeight="324.0" fitWidth="200.0" layoutX="210.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@images/2_of_hearts.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fx:id="cardImage7" fitHeight="324.0" fitWidth="200.0" layoutX="410.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@images/2_of_hearts.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </HBox>
+            </FlowPane>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="60.0">
                <children>
                   <Label fx:id="guessNumLabel" text="Guesses: 0" />

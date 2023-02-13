@@ -1,22 +1,24 @@
 package com.example.w23comp1008s2w2fx;
 
-import java.util.List;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
 
-public class Main {
+import java.io.IOException;
+
+public class Main extends Application {
+    @Override
+    public void start(Stage stage) throws IOException {
+        FXMLLoader fxmlLoader =
+                new FXMLLoader(Main.class.getResource("matching-game.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("Memory Game");
+        stage.setScene(scene);
+        stage.show();
+    }
+
     public static void main(String[] args) {
-        //this will create an instance of a Card object
-        //it holds the Ace of Spades
-//        Card aceOfSpades = new Card("Ace","Spades");
-//        Card queenOfHearts = new Card("Queen","Hearts");
-//        System.out.println("Value of "+aceOfSpades + ": "+aceOfSpades.getValue());
-//        System.out.println("colour: "+aceOfSpades.getColour());
-//        System.out.println(queenOfHearts.toString());
-//
-        DeckOfCards deck = new DeckOfCards();
-        System.out.println(deck);
-
-//        Card queenOfSpades = new Card("queen","spades");
-//        System.out.println(queenOfSpades);
-//        System.out.printf("%d",queenOfSpades.getValue());
+        launch();
     }
 }
