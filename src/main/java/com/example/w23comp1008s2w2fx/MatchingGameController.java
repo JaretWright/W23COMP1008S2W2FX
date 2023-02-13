@@ -42,28 +42,21 @@ public class MatchingGameController implements Initializable {
         //Show the back of cards
         //This is the "long" way that calls each ImageView object directly
         Image backOfCard = new Image(Card.class.getResourceAsStream("images/back_of_card.png"));
-        cardImage0.setImage(backOfCard);
-        cardImage1.setImage(backOfCard);
-        cardImage2.setImage(backOfCard);
-        cardImage3.setImage(backOfCard);
 
         //We can also achieve this by looping over all the "Node's" in the HBox container
         //add a "listener" to each ImageView so that we can display the card selected
-        for (Node node : row2HBox.getChildren())
+        for (int i=0; i<flowPane.getChildren().size(); i++)
         {
             //Cast the Node to be an ImageView object.  This is sort of like saying
             //It's a car versus it's a BMW
+            Node node = flowPane.getChildren().get(i);
             ImageView imageView = (ImageView) node;
             imageView.setImage(backOfCard);
+            imageView.setUserData(i);
 
             //the -> {} is a "lambda expression", not required for this course, but can make things easier
             imageView.setOnMouseClicked(event -> {
-                String id = imageView.getId();
-                id = id.replaceAll("[a-zA-Z]*","");
-                System.out.println(id);
-                //concert the String into a number
-                int index = Integer.parseInt(id);
-                System.out.println(cardsDealt.get(index));
+                int index = (int) imageView.getUserData();
                 imageView.setImage(cardsDealt.get(index).getImage());
             });
         }
