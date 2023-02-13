@@ -123,4 +123,8 @@ public class Card {
         return new Image(Card.class.getResourceAsStream(fileName));
     }
 
+    public Image getBackOfCardImage()
+    {
+        return new Image(Card.class.getResourceAsStream("images/back_of_card.png"));
+    }
 }
